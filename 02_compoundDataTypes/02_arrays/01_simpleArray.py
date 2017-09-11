@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 This script contains a simple example of working with arrays.
 """

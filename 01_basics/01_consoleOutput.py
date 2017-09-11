@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 M&T version of "Hello World"
 A simple Hello World python script, in which "Ding" is printed to the console.

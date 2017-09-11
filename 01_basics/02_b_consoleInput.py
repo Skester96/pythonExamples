@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 Another M&T version of "Hello World", this time with console input
 

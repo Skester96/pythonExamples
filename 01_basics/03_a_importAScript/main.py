@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 This is an example of a script that imports another script and uses its content.
 
