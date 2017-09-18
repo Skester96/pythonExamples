@@ -8,7 +8,6 @@ class AudioProcessor:
     def process(self, inputFrame):
       #move sine a step forward
       self.sine.tick()
-      self.sine2.tick()
-      #retrieve the new value
 
+      #retrieve the new value
       return self.sine.value
