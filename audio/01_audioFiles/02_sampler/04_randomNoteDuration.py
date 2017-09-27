@@ -10,6 +10,7 @@ Used note durations are: sixteenth, eight, quarter notes
 ------ HANDS-ON TIPS ------
 #TODO - add hands-on tips
 """
+
 #load 3 audioFiles into a list
 samples = [sa.WaveObject.from_wave_file("../audioFiles/Pop.wav"),
               sa.WaveObject.from_wave_file("../audioFiles/Laser1.wav"),
@@ -29,6 +30,7 @@ for noteDuration in noteDurations:
   #calculate timeDuration and add to the list
   timeIntervals.append(beatDuration * noteDuration)
 
+#display timeIntervals
 print(timeIntervals)
 
 

@@ -10,6 +10,7 @@ Used durations are: 0.125, 0.25 and 0.5 seconds
 ------ HANDS-ON TIPS ------
 #TODO - add hands-on tips
 """
+
 #load 3 audioFiles into a list
 samples = [sa.WaveObject.from_wave_file("../audioFiles/Pop.wav"),
               sa.WaveObject.from_wave_file("../audioFiles/Laser1.wav"),
