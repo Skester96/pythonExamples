@@ -4,7 +4,7 @@ import random
 
 """
 An example project in which a sequence (one measure, one sample) is played.
-  - Sixteenth note is the smallest used note durationself.
+  - Sixteenth note is the smallest used note duration.
   - One meassure, time signature: 3 / 4
   - 3 * 4 sixteenth notes per measure = 12 'spots'
 
@@ -30,7 +30,7 @@ stepsPerSequence = int(1 / stepDuration * beatsPerSequence)
 
 #create a list to hold a rhythm notated in sixteenth notes
 #these are the steps at which we will play the sample
-sequence = [0, 2, 4, 8, 11, 12]
+sequence = [0, 2, 4, 8, 11]
 #retrieve first event of sequence
 #NOTE: pop(0) returns and removes the element at index 0
 event = sequence.pop(0)

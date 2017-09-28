@@ -4,7 +4,7 @@ import random
 
 """
 An example project in which a sequence (one measure, one sample) is played.
-  - Sixteenth note is the smallest used note durationself.
+  - Sixteenth note is the smallest used note duration.
   - One meassure, time signature: 3 / 4
 
 Instead of using steps to iterate to true a sequence, we are checking the time.
@@ -31,8 +31,8 @@ measureDuration = beatsPerMeasure  * quarterNoteDuration
 
 #create a list to hold the events
 timeEvents = []
-#create a list with indices in sixteenth note values at which will play a sample
-sixteenthNoteSequece = [0, 2, 4, 8, 11, 12]
+#create a list with the moments (in 16th) at which we should play the sample
+sixteenthNoteSequece = [0, 2, 4, 8, 11]
 #transform the sixteenthNoteSequece to an eventlist with time values
 for sixteenNoteIndex in sixteenthNoteSequece:
   timeEvents.append(sixteenNoteIndex * sixteenthNoteDuration)
@@ -49,7 +49,7 @@ keepPlaying = True
 while keepPlaying:
   #retrieve current time
   currentTime = time.time()
-  #check if the timeEvent is time is passed
+  #check if the timeEvent's time is passed
   if(currentTime - startTime >= timeEvent):
     #play sample
     samples[0].play()
