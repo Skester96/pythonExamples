@@ -16,6 +16,11 @@ We will trigger events based on their eventtime.
     In the playback loop, the current time is compared to the next timeEvent.
     Why is this a more accurate method then the methods used in the examples
     "04_randomNoteDuration.py" and "05_oneSampleSequenceSteps.py"?
+
+- Alter the code:
+  Currently one sample is played. Add another sample to the script.
+  Each time when a sample needs to be played, choice one of the two samples
+  randomly.
 """
 
 #load 1 audioFile and store it into a list

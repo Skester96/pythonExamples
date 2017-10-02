@@ -25,14 +25,14 @@ sampleLow = sa.WaveObject.from_wave_file("../audioFiles/Dog2.wav")
 #play high sample
 sampleHighPlay = sampleHigh.play()
 #wait till sample is done playing
-sampleLowPlay.wait_done()
+sampleHighPlay.wait_done()
 
 #play mid sample
 sampleMidPlay = sampleMid.play()
 #wait till sample is done playing
-sampleHighPlay.wait_done()
+sampleMidPlay.wait_done()
 
 #play low sample
 sampleLowPlay = sampleLow.play()
 #wait till sample is done playing
-sampleMidPlay.wait_done()
+sampleLowPlay.wait_done()
