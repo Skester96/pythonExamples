@@ -3,15 +3,24 @@ import time
 import random
 
 """
-An example project in which a sequence (one measure, one sample) is played.
+An example project in which a sequence (one measure, 1 sample) is played.
   - Sixteenth note is the smallest used note duration.
   - One meassure, time signature: 3 / 4
 
-Instead of using steps to iterate to true a sequence, we are checking the time.
-We will trigger events at based on their eventtime.
+Instead of using steps to iterate through a sequence, we are checking the time.
+We will trigger events based on their eventtime.
 
 ------ HANDS-ON TIPS ------
-#TODO - add hands-on tips
+- Run the code, read the code and answer the following question:
+  - This script transforms a list of sixteenth notes into a list with timeEvents.
+    In the playback loop, the current time is compared to the next timeEvent.
+    Why is this a more accurate method then the methods used in the examples
+    "04_randomNoteDuration.py" and "05_oneSampleSequenceSteps.py"?
+
+- Alter the code:
+  - 
+
+
 """
 
 #load 1 audioFile and store it into a list
@@ -32,12 +41,10 @@ measureDuration = beatsPerMeasure  * quarterNoteDuration
 #create a list to hold the events
 timeEvents = []
 #create a list with the moments (in 16th) at which we should play the sample
-sixteenthNoteSequece = [0, 2, 4, 8, 11]
-#transform the sixteenthNoteSequece to an eventlist with time values
-for sixteenNoteIndex in sixteenthNoteSequece:
+sixteenthNoteSequence = [0, 2, 4, 8, 11]
+#transform the sixteenthNoteSequence to an eventlist with time values
+for sixteenNoteIndex in sixteenthNoteSequence:
   timeEvents.append(sixteenNoteIndex * sixteenthNoteDuration)
-
-print(timeEvents)
 
 #retrieve first event
 #NOTE: pop(0) returns and removes the element at index 0

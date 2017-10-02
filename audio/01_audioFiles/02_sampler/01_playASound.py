@@ -5,11 +5,16 @@ import simpleaudio as sa
 An example project in which three wav files are played after eachother.
 
 ------ HANDS-ON TIPS ------
-- A question before running the code: do you expect to hear the samples played simultaniously or
-  after eachother?
-- Can you identify the duplicate code? With duplicate code we refer to code
-  that occurs more than once.
-- Can you alter the code to play the sounds simultaniously?
+- Answer the following question before running the code:
+  Do you expect to hear the samples played simultaniously or after eachother?
+  Why?
+
+- Alter the code:
+  Play the sounds simultaniously.
+
+- Alter the code:
+  Ask the user to choice which one of the three samples should be played and
+  only the chosen sample.
 """
 
 #load 3 audioFiles

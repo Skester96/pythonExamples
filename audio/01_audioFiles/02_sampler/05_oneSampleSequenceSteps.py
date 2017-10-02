@@ -6,10 +6,15 @@ import random
 An example project in which a sequence (one measure, one sample) is played.
   - Sixteenth note is the smallest used note duration.
   - One meassure, time signature: 3 / 4
-  - 3 * 4 sixteenth notes per measure = 12 'spots'
+  - 3 * 4 sixteenth notes per measure = 12 'steps'
 
 ------ HANDS-ON TIPS ------
-#TODO - add hands-on tips
+- Run the code, read the code and answer the following question:
+  This script does not use a list with time intervals, but does play a rhythm
+  with one sample. Explain how.
+
+- Alter the code:
+  Fix the bug that occurs: "IndexError: pop from empty list"
 """
 
 #load 1 audioFile and store it into a list
@@ -22,21 +27,21 @@ bpm = 120
 beatDuration = 60 / bpm
 #number of beats per sequence (time signature: 3 / 4 = 3 beats per sequence)
 beatsPerSequence = 3
-#calculate stepDuration, this is the smalles note duration, a 16th note
-#(16th note equals 1/4 of a quarter note -> 0.25)
-stepDuration = 0.25
+#number of steps per beat (4 steps per beat -> using sixteenth notes)
+stepsPerBeat = 4
+#calculate stepDuration
+stepDuration = beatDuration / stepsPerBeat
 #calculate number of steps per sequence
-stepsPerSequence = int(1 / stepDuration * beatsPerSequence)
+stepsPerSequence = stepDuration * beatsPerSequence
 
-#create a list to hold a rhythm notated in sixteenth notes
-#these are the steps at which we will play the sample
+#create a list with a rhythm: the steps at which the sample will be played
 sequence = [0, 2, 4, 8, 11]
 #retrieve first event of sequence
 #NOTE: pop(0) returns and removes the element at index 0
 event = sequence.pop(0)
 #play the sequence
 for step in range(stepsPerSequence):
-  print(event)
+  print("Current step: ", step)
   if(step == event):
     samples[0].play()
     #retrieve the next event

@@ -7,19 +7,26 @@ An example project in which a sequence (one measure, multiple samples) is played
   - Sixteenth note is the smallest used note duration.
   - One meassure, time signature: 3 / 4
 
-Instead of using steps to iterate to true a sequence, we are checking the time.
-We will trigger events at based on their eventtime.
+Instead of using steps to iterate through a sequence, we are checking the time.
+We will trigger events based on their eventtime.
 
 ------ HANDS-ON TIPS ------
-#TODO - add hands-on tips
-- Line 62 is outcommented. However, this line is essential to enable correct
-  playback of the sequence.
-  Run the script with the outcommented line, what goes wrong?
-  Remove the [#] at the of the line, what will happen now?
-- Are you able you detect the duplicate code?
-  Think of a solution to prevent this duplicate code.
-  Implement your solution.
-- Currently the sequence is only played once.
+- Answer the following questions before running the code:
+  - Line 74 is outcommented. However, this line is essential to enable correct
+    playback of the sequence.
+    Read the code: what will go wrong?
+    Check your answer by running the script with the outcommented line.
+  - Remove the [#] at the of the line, what will happen now?
+    Check your answer by running the script.
+
+- Add comments:
+  A few comments are missing in this script.
+  The lines: 63, 67, 71 contain the numbers 0, 1, 2, and are added to the
+  timeEvents list. To 'what' do these numbers refer?
+  Add meaningfull comments.
+
+- Alter the code:
+  Currently the sequence is only played once.
   Alter the code to play it multiple times.
   hint: The events list is emptied using the pop() function. Copy it first?
 """
