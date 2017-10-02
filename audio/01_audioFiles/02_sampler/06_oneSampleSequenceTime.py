@@ -16,11 +16,6 @@ We will trigger events based on their eventtime.
     In the playback loop, the current time is compared to the next timeEvent.
     Why is this a more accurate method then the methods used in the examples
     "04_randomNoteDuration.py" and "05_oneSampleSequenceSteps.py"?
-
-- Alter the code:
-  - 
-
-
 """
 
 #load 1 audioFile and store it into a list
@@ -33,10 +28,6 @@ bpm = 120
 quarterNoteDuration = 60 / bpm
 #calculate the duration of a sixteenth note
 sixteenthNoteDuration = quarterNoteDuration / 4.0
-#number of beats per sequence (time signature: 3 / 4 = 3 beats per sequence)
-beatsPerMeasure = 3
-#calculate the duration of a measure
-measureDuration = beatsPerMeasure  * quarterNoteDuration
 
 #create a list to hold the events
 timeEvents = []
