@@ -6,7 +6,7 @@ continueRunning = True
 #a function that prints "bleep" to the console every second
 def bleep():
   global continueRunning
-  #NOTE: infinitive loop, for demonstration purposes only!
+  #repeat: wait 1 second, print "bleep" to console
   while continueRunning:
     time.sleep(1)
     print("bleep")
