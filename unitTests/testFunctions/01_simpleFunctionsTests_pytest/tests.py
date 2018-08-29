@@ -1,6 +1,8 @@
 import pytest
 import functionsToTest as funcs
 
+# run by calling: python3 -m pytest tests.py
+
 
 def test_add_ten():
     assert(funcs.add_ten(10) == 20)

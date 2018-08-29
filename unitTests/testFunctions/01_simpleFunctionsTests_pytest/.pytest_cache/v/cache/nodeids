@@ -1,4 +1,0 @@
-[
-  "tests.py::test_add_ten",
-  "tests.py::test_is_valid_midi_value"
-]
