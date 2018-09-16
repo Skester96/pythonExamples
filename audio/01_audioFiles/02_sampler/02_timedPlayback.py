@@ -8,7 +8,7 @@ minor break in between.
 ------ HANDS-ON TIPS ------
 - Alter the code:
   Write a function that plays the samples a given number of times.
-  Use this function. 
+  Use this function.
 
 - Alter the code:
   Change the time in between samples into a random value.

@@ -15,7 +15,7 @@ We will trigger events based on their eventtime.
   - Line 74 is outcommented. However, this line is essential to enable correct
     playback of the sequence.
     Read the code: what will go wrong?
-    Check your answer by running the script with the outcommented line.
+    Check your answer by running the script with the line outcommented.
   - Remove the [#] at the of the line, what will happen now?
     Check your answer by running the script.
 
@@ -28,7 +28,7 @@ We will trigger events based on their eventtime.
 - Alter the code:
   Currently the sequence is only played once.
   Alter the code to play it multiple times.
-  hint: The events list is emptied using the pop() function. Copy it first?
+  hint: The events list is emptied using the pop() function. 
 """
 
 #______________________________________________________________________________

@@ -14,7 +14,7 @@ An example project in which three wav files are played after eachother.
 
 - Alter the code:
   Ask the user to choice which one of the three samples should be played and
-  only the chosen sample.
+  only play the chosen sample.
 """
 
 #load 3 audioFiles

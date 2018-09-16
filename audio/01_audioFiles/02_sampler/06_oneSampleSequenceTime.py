@@ -8,7 +8,7 @@ An example project in which a sequence (one measure, 1 sample) is played.
   - One meassure, time signature: 3 / 4
 
 Instead of using steps to iterate through a sequence, we are checking the time.
-We will trigger events based on their eventtime.
+We will trigger events based on their event time.
 
 ------ HANDS-ON TIPS ------
 - Run the code, read the code and answer the following question:
@@ -19,7 +19,7 @@ We will trigger events based on their eventtime.
 
 - Alter the code:
   Currently one sample is played. Add another sample to the script.
-  Each time when a sample needs to be played, choice one of the two samples
+  Each time when a sample needs to be played, choose one of the two samples
   randomly.
 """
 
