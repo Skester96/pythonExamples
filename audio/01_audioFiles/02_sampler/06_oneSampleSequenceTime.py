@@ -12,15 +12,23 @@ We will trigger events based on their event time.
 
 ------ HANDS-ON TIPS ------
 - Run the code, read the code and answer the following question:
-  - This script transforms a list of sixteenth notes into a list with timeEvents.
+  - This script transforms a list of sixteenth notes events into a list with timeEvents.
     In the playback loop, the current time is compared to the next timeEvent.
     Why is this a more accurate method then the methods used in the examples
     "04_randomNoteDuration.py" and "05_oneSampleSequenceSteps.py"?
+    Notate your answer below this line (Dutch is allowed)!
 
 - Alter the code:
   Currently one sample is played. Add another sample to the script.
   Each time when a sample needs to be played, choose one of the two samples
   randomly.
+  (See the hint about the random package in script "02_timedPlayback".)
+
+- Alter the code:
+  Currently the sequence is only played once.
+  Alter the code to play it multiple times.
+  hint: The events list is emptied using the pop() function.
+
 """
 
 #load 1 audioFile and store it into a list
@@ -36,10 +44,10 @@ sixteenthNoteDuration = quarterNoteDuration / 4.0
 
 #create a list to hold the events
 timeEvents = []
-#create a list with the moments (in 16th) at which we should play the sample
-sixteenthNoteSequence = [0, 2, 4, 8, 11]
-#transform the sixteenthNoteSequence to an eventlist with time values
-for sixteenNoteIndex in sixteenthNoteSequence:
+#create a list with note events (in 16th) at which we should play the sample
+sixteenthNoteEvents = [0, 2, 4, 8, 11]
+#transform the sixteenthNoteEvents to an eventlist with time values
+for sixteenNoteIndex in sixteenthNoteEvents:
   timeEvents.append(sixteenNoteIndex * sixteenthNoteDuration)
 
 #retrieve first event
