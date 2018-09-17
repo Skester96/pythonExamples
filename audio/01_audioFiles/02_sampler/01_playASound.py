@@ -1,4 +1,4 @@
-#simpleaudio is imported as sa -> shorter name
+# simpleaudio is imported as sa -> shorter name
 import simpleaudio as sa
 
 """
@@ -17,22 +17,22 @@ An example project in which three wav files are played after eachother.
   only play the chosen sample.
 """
 
-#load 3 audioFiles
+# load 3 audioFiles
 sampleHigh = sa.WaveObject.from_wave_file("../audioFiles/Pop.wav")
 sampleMid = sa.WaveObject.from_wave_file("../audioFiles/Laser1.wav")
 sampleLow = sa.WaveObject.from_wave_file("../audioFiles/Dog2.wav")
 
-#play high sample
+# play high sample
 sampleHighPlay = sampleHigh.play()
-#wait till sample is done playing
+# wait till sample is done playing
 sampleHighPlay.wait_done()
 
-#play mid sample
+# play mid sample
 sampleMidPlay = sampleMid.play()
-#wait till sample is done playing
+# wait till sample is done playing
 sampleMidPlay.wait_done()
 
-#play low sample
+# play low sample
 sampleLowPlay = sampleLow.play()
-#wait till sample is done playing
+# wait till sample is done playing
 sampleLowPlay.wait_done()

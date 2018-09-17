@@ -22,22 +22,22 @@ Used durations are: 0.125, 0.25 and 0.5 seconds
   Use this function.
 """
 
-#load 3 audioFiles into a list
+# load 3 audioFiles into a list
 samples = [sa.WaveObject.from_wave_file("../audioFiles/Pop.wav"),
               sa.WaveObject.from_wave_file("../audioFiles/Laser1.wav"),
               sa.WaveObject.from_wave_file("../audioFiles/Dog2.wav")]
 
-#create a list to hold the timeIntervals 0.25, 0.5, 1.0
+# create a list to hold the timeIntervals 0.25, 0.5, 1.0
 timeIntervals = [0.25, 0.5, 1]
-#play samples and wait in between (random duration)
+# play samples and wait in between (random duration)
 for sample in samples:
-  #display the sample object
+  # display the sample object
   print(sample)
-  #play sample
+  # play sample
   sample.play()
-  #retrieve a random index value -> 0 till 2
+  # retrieve a random index value -> 0 till 2
   randomIndex = random.randint(0, 2)
-  #dislay the selected timeInterval
+  # dislay the selected timeInterval
   print("waiting: " + str(timeIntervals[randomIndex]) + " seconds.")
-  #wait!
+  # wait!
   time.sleep(timeIntervals[randomIndex])

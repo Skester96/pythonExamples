@@ -18,17 +18,17 @@ minor break in between.
          A standard package does not need to be installed with pip, but it does
          need to be imported.
 """
-#load 3 audioFiles into a list
+# load 3 audioFiles into a list
 samples = [ sa.WaveObject.from_wave_file("../audioFiles/Pop.wav"),
             sa.WaveObject.from_wave_file("../audioFiles/Laser1.wav"),
             sa.WaveObject.from_wave_file("../audioFiles/Dog2.wav")]
 
 
-#play samples, wait 1 second in between
+# play samples, wait 1 second in between
 for sample in samples:
-  #display the sample object
+  # display the sample object
   print(sample)
-  #play sample
+  # play sample
   sample.play()
-  #wait 1 second
+  # wait 1 second
   time.sleep(1)

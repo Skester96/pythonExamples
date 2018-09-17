@@ -27,39 +27,39 @@ samples = [sa.WaveObject.from_wave_file("../audioFiles/Pop.wav"),
               sa.WaveObject.from_wave_file("../audioFiles/Laser1.wav"),
               sa.WaveObject.from_wave_file("../audioFiles/Dog2.wav")]
 
-#create a list with possible noteValues: sixteenth, eighth and a quarter note
+# create a list with possible note durations: sixteenth, eighth and a quarter note
 noteDurations = [0.25, 0.5, 1]
-#set bpm
+# set bpm
 bpm = 120
-#create a list to hold timeIntervals
+# create a list to hold timeIntervals
 timeIntervals = []
 
-#transform noteDurations into timeIntervals, depending on bpm
-#calculate beatDuration in seconds (equals duration of a quarter note)
+# transform noteDurations into timeIntervals, depending on bpm
+# calculate beatDuration in seconds (equals duration of a quarter note)
 beatDuration = 60.0 / bpm
 for noteDuration in noteDurations:
-  #calculate timeDuration and add to the list
+  # calculate timeDuration and add to the list
   timeIntervals.append(beatDuration * noteDuration)
 
-#display timeIntervals
+# display timeIntervals
 print("Selection of time intervals: ", timeIntervals )
 
 
-#a function that plays a list of samples with random timeIntervals in between,
-#based on the values in the passed in interval list.
+# a function that plays a list of samples with random timeIntervals in between,
+# based on the values in the passed in interval list.
 def playSamples(samples, intervals):
-  #play samples and wait in between (random duration)
+  # play samples and wait in between (random duration)
   for sample in samples:
-    #play sample
+    # play sample
     sample.play()
-    #retrieve a random timeInterval
-    #use the random.choice function -> returns a random element from a sequence
+    # retrieve a random timeInterval
+    # use the random.choice function -> returns a random element from a sequence
     timeInterval = random.choice(intervals)
-    #display the selected time interval
+    # display the selected time interval
     print("waiting: " + str(timeInterval) + " seconds.")
-    #wait!
+    # wait!
     time.sleep(timeInterval)
 
-#call the playSamples function 4 times
+# call the playSamples function 4 times
 for i in range(4):
   playSamples(samples, timeIntervals)
